@@ -65,7 +65,7 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
             present(ac, animated: true)
         } else {
-            let ac = UIAlertController(title: "Game over!", message: "Your final score is \(score) from \(attemps).", preferredStyle: .alert)
+            let ac = UIAlertController(title: title, message: "Game over! Your final score is \(score) from \(attemps).", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "New game?", style: .default, handler: askQuestion))
             present(ac, animated: true)
             usedAttemps = 0
